@@ -1,0 +1,75 @@
+* {
+	font-family: 'Outfit', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+:root {
+	--black: #222;
+	--blue: #335DFF;
+	--blue-d-1: #204AEE;
+	--grey-l-1: #F5F5F5;
+	--grey: #EEE;
+	--grey-d-1: #888;
+	--yellow: #FFC652;
+	--white: #FFF;
+	--red: #F00000;
+}
+
+body{
+
+  background: linear-gradient(90deg, var(--grey-l-1) 31px, transparent 1px) 50%, linear-gradient(180deg, var(--grey-l-1) 31px, var(--grey-d-1) 1px) 50%;
+	background-size: 32px 32px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  li {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  a{
+    font-size: 15px;
+  }
+  /* PAGE TRANSITION */
+body::before {
+	content: '';
+	position: fixed;
+	inset: 0;
+	transition: bottom .5s cubic-bezier(0.65, 0.05, 0.36, 1);
+	background: var(--blue);
+	z-index: 9999;
+}
+body.hide::before {
+	bottom: 100%;
+}
+/* PAGE TRANSITION */
+

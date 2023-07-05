@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="appli.ca.css">
+	<title>Application</title>
+</head>
+<body>
+
+	<div class="form-wrapper">
+		<h2 class="form-title">Apply Your Season Ticket</h2>
+		<p class="form-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, deleniti totam iure. Eum eos ea nam.</p>
+		<form action="#">
+			<div class="formData">
+                <label for="department" >Department</label>
+                <select name="department">
+                    <option value="hndit">HNDIT</option>
+                    <option value="hnde">HNDE</option>
+                    <option value="hndba">HNDBA</option>
+                    <option value="hndTHM">HNDTHM</option>
+                </select>
+            </div>
+            <div class="formData">
+                <label for="year" class="required">Year</label>
+                <select name="year">
+                    <option value="yearOne">Year 1</option>
+                    <option value="yearTwo">Year 2</option>
+                    <option value="yearThree">Year 3</option>
+                    <option value="yearFour">Year 4</option>
+                </select>
+            </div>
+			<div class="form-group">
+				<label for="email" class="required">Email Address</label>
+				<input type="email" id="email" placeholder="example@example.com" required>
+			</div>
+			<div class="form-group">
+				<label for="first-name" class="required">Full Name</label>
+				<input type="text" id="first-name" placeholder="John">
+			</div>
+			<div class="form-group">
+				<label for="index" class="required">Index Number</label>
+				<input type="text/number" id="index" placeholder="KAN/IT/2021/001" required>
+			</div>
+            <div class="distency">
+                <div class="form-group">
+                    <label for="from">From</label>
+                    <input type="text" name="from" placeholder="home town">
+                </div>
+                <div class="form-group">
+                    <label for="interChange">Interchange point (optional)</label>
+                    <input type="text" name="interChange" placeholder="changing place">
+                </div>
+                <div class="form-group">
+                    <label for="to">To</label>
+                    <input type="text" name="to" placeholder="kandy">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="text" name="price" id="priceInput" placeholder="price for one turn" oninput="calculateSeasonPrice()">
+            </div>
+            <div class="form-group">
+                <label for="seasonPrice">Season Price</label>
+                <input type="text" name="seasonPrice" id="seasonPriceInput" disabled>
+            </div>
+            <div>
+			<button type="submit" class="btn btn-blue mb-4">Submit</button>
+			<p><a href="../index2.html" class="form-link">Back </a></p>
+		</form>
+	</div>
+
+	
+    <script src="appli.ca.js"></script>
+</body>
+</html>
+

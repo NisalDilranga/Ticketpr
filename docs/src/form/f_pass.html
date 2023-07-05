@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="frm.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div class="form-wrapper">
+    <form id="f_pass-form" >
+        <div class="form-groupp">
+            <label for="email" class="required">Email Address</label>
+            <input type="email" id="email" placeholder="example@example.com" required>
+        </div>
+        <button type="submit" id="reset-password" class="btn btn-blue mb-4">Reset Password</button>
+        <p><a href="login.html" class="form-link">Back to Login</a></p>
+    </form>
+    <p id="message"></p>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+
+    <script src="f_pass.js"></script>
+    
+</body>
+</html>

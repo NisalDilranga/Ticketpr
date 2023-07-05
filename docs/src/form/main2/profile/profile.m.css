@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+* {
+	font-family: 'Outfit', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+:root {
+	--black: #222;
+	--blue: #335DFF;
+	--blue-d-1: #204AEE;
+	--grey-l-1: #F5F5F5;
+	--grey: #EEE;
+	--grey-d-1: #888;
+	--yellow: #FFC652;
+	--white: #FFF;
+	--red: #F00000;
+}
+
+body { 
+  background: linear-gradient(90deg, var(--grey-l-1) 31px, transparent 1px) 50%, linear-gradient(180deg, var(--grey-l-1) 31px, var(--grey-d-1) 1px) 50%;
+  background-size: 32px 32px;
+
+}
+
+.shadow {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.profile-tab-nav {
+	min-width: 250px;
+}
+
+.tab-content {
+	flex: 1;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.nav-pills a.nav-link {
+	padding: 15px 20px;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0;
+	color: #333;
+}
+.nav-pills a.nav-link i {
+	width: 20px;
+}
+a{
+    padding-top: 20px;
+}
+ /* PAGE TRANSITION */
+ /* body::before {
+	content: '';
+	position: fixed;
+	inset: 0;
+	transition: bottom .5s cubic-bezier(0.65, 0.05, 0.36, 1);
+	background: var(--blue);
+	z-index: 9999;
+}
+body.hide::before {
+	bottom: 100%;
+} */
+/* PAGE TRANSITION */

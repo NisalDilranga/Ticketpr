@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="frm.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<title>Register</title>
+</head>
+<body>
+
+
+
+	<div class="form-wrapper">
+		<h2 class="form-title">Create your account</h2>
+		<p class="form-detail">Please fill out the registration form below to create your account and start enjoying the benefits of our platform. Provide the required information, including your name, email address, and password, to get started on your journey with us</p>
+		<form  id="regi-form">
+			<div class="form-group">
+				<label for="username" class="required">Username</label>
+				<input type="text" id="username" placeholder="example123" required>
+			</div>
+			<div class="form-group">
+				<label for="email" class="required">Email Address</label>
+				<input type="email" id="email" placeholder="example@example.com" required>
+			</div>
+			<div class="form-group">
+				<label for="index">Index Number</label>
+				<input type="text" id="index" placeholder="KAN/IT/2021/F/001">
+			</div>
+			<!-- <div class="form-group">
+				<label for="last-name">Last Name</label>
+				<input type="text" id="last-name" placeholder="Doe">
+			</div> -->
+			<div class="form-group">
+				<label for="password" class="required">Password</label>
+				<input type="password" id="password" placeholder="Your password" required>
+			</div>
+			<div class="form-group">
+				<label for="password" class="required">Confirm Password</label>
+				<input type="password" id="cpassword" placeholder="Type your password again" required>
+			</div>
+			<button type="submit"  class="btn btn-blue mb-4">Create Account</button>
+			<p>Already have an account? <a href="login.html" class="form-link">Login</a></p>
+		</form>
+		<p id="message"></p>
+	</div>
+	
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+	<script src="frm_reg.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="frm.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<title>Login</title>
+</head>
+<body>
+	
+
+
+	<div class="form-wrapper" >
+		<h2 class="form-title">Login</h2>
+		<p class="form-detail">Please enter your email address and password to access your account and enjoy our exclusive features and services.</p>
+		<form id="login-form">
+			<div class="form-group">
+				<label for="email" class="required">Email Address</label>
+				<input type="email" id="email" placeholder="example@example.com" required>
+			</div>
+			<div class="form-group">
+				<label for="password" class="required">Password</label>
+				<input type="password" id="password" placeholder="Your password" required>
+			</div>
+			<div class="mb-4">
+				<a href="f_pass.html" class="form-link">Forgot password?</a>
+			</div>
+			<button type="submit" class="btn btn-blue mb-4">Login</button>
+			<p>Don't have an account? <a href="register.html" class="form-link">Create account</a></p>
+		</form>
+        <p id="message"></p>
+	</div>
+	
+	<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+	<script src="frm_log.js"></script>
+</body>
+</html>
